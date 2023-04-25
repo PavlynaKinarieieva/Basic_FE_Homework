@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Open Sans", sans-serif; 
+            background: darkgrey;
+        }
+        div {
+            background: #fff;
+            width: 400px;
+            height: 470px;
+            padding: 25px;
+        }
+        h2 {
+            text-align: center;
+            color: #233153;
+            font-size: 170%;
+        }
+        .text {
+            text-align: center;
+            color: rgb(126, 121, 121);
+        }
+        .info {
+            color: #233153;
+            font-size: 85%;
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+        .input {
+            margin-top: 0;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            background: #f7f6f9;
+        }
+        input:focus {
+            border: 1px solid rgba(133, 89, 236, 0.5);
+            outline: 0;
+            box-shadow:rgba(133, 89, 236, 0.25) 0 0 0 0.2rem;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        .create {
+            background: #8559ec;
+            color: white;
+        }
+        .sign {
+            background: #edeef8;
+            color: #233153;
+        }
+        .buttons {
+            margin-bottom:0;
+            margin-top: 10px;
+        }
+        a {
+            color: white;
+        }
+      </style>
+
+
+</head>
+<body>
+    <div>
+        <h2>
+            Create an account
+        </h2>
+        <p class="text">
+            Sign up now and unlock exclusive access!
+        </p>
+        <p class="info">
+            Your name
+        </p>
+        <p class="input">
+            <input type="text" placeholder="First Last">
+        </p>
+        <p class="info">
+            Email
+        </p>
+        <p class="input">
+            <input type="email" placeholder="you@email.com">
+        </p>
+        <p class="info">
+            Password
+        </p>
+        <p class="input">
+            <input type="password" placeholder="your password">
+        </p>
+        <p class="buttons">
+            <button class="create">
+                Create Account
+            </button>
+        </p>
+        <p class="buttons">
+            <button class="sign">
+                Sign in
+            </button>
+        </p>
+    </div>
+</body>
+</html>
