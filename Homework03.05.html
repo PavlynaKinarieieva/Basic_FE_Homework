@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+      :root {
+        --bg-color: #6e6461;
+        --gap: 30px;
+      }
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      .container {
+        height: 100%;
+        width: 100%;
+      }
+      div {
+        background: #72d5b6;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg-color);
+        gap: var(--gap);
+        padding: 50px;
+      }
+      .left-square {
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        height: 100%;
+        flex: 2.5;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+      p {
+        color: var(--bg-color);
+        font-size: 50px;
+        margin: 10px;
+      }
+      .right-square {
+        display: flex;
+        height: 100%;
+        flex: 3;
+        gap: var(--gap);
+        flex-direction: column;
+        background: var(--bg-color);
+      }
+      .right-block {
+        display: flex;
+        flex: 1;
+        height: 100%;
+      }
+      .right-center {
+        display: flex;
+        gap: var(--gap);
+        justify-content: center;
+        background: var(--bg-color);
+      }
+      .center-left,
+      .center-right {
+        flex: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-square">
+        <p>Flexbox</p>
+      </div>
+      <div class="right-square">
+        <div class="right-block right-top"></div>
+        <div class="right-block right-center">
+          <div class="center-left"></div>
+          <div class="center-right"></div>
+        </div>
+        <div class="right-block right-bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>
